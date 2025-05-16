@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MARG{% endblock %}</title>
+    
+    <!-- Global CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'pages/css/base.css' %}">
+    
+    <!-- To add page-specific CSS -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <!-- Reusable Navbar -->
+        {% include 'pages/navbar.html' %} 
+        {% if secondary_nav_items %}
+            <nav class="secondary-navbar">
+                <ul class = 'navbar-list'>
+                    {% for item in secondary_nav_items %}
+                        <li>
+                            {% if item.type == 'external' %}
+                                <a href="{{ item.url_name }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
+                            {% else %}
+                                <a href="{% url item.url_name %}">{{ item.name }}</a>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+
+    </header>
+    
+    <main>
+        <!-- Placeholder for page content -->
+        {% block content %}{% endblock %}  
+    </main>
+</body>
+</html>

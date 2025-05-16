@@ -1,0 +1,33 @@
+/* === Base Styles === */
+body {
+  font-family: 'Inter', sans-serif;
+  --text-color: #ffffff;
+}
+
+/* === Navigation Container === */
+.secondary-navbar {
+  width: 100%;
+  background-color: rgb(189, 199, 201); /* Soft gray-blue background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  position: relative;
+  list-style: none
+}
+
+.navbar-list li a{
+  text-decoration: none;
+  color: var(--text-color); /* Black text color */
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}

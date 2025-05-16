@@ -1,0 +1,16 @@
+<nav>
+    <div class = 'navbar-container'>
+        <a href="/" class="{% if request.path == '/' %}active{% endif %}">MARG - Historic Roads</a>
+
+        <nav class = 'navbar-links'>
+            <ul class="navbar-link-list">
+                <li><a href="{%url 'about'%}">About</a></li>
+                <li><a href="{%url 'explore_historic_routes'%}">Explore</a></li>
+                <li><a href="{%url 'identification_documentation_methodology'%}">Identification & Documentation</a></li>
+                <li><a href="{%url 'conservation_preservation'%}">Conservation</a></li>
+                <li><a href="{%url 'management_safety'%}">Management</a></li>
+                <li><a href="https://dev.marg-histroicroads.com/" target="_blank" rel="noopener noreferrer">The MARG Network</a></li>
+            </ul>
+        </nav>
+    </div>  
+</nav>

@@ -1,0 +1,51 @@
+:root {
+  --color-bg: 43 79 96;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar container */
+.navbar-container {
+  background-color: rgb(var(--color-bg)/.95);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 2.5%;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar brand text */
+.navbar-container a {
+  text-decoration: none;
+  font-size: calc(1.5vw + 0.7rem);
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Navbar menu */
+.navbar-link-list{
+  display: flex;
+  list-style: none;
+  gap: 1.35rem;
+  font-weight: 500;
+}
+
+.navbar-link-list li {
+  display: inline;
+}
+
+.navbar-link-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Remove margin for body to allow normal scrolling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
