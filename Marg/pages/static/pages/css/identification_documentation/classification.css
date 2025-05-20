@@ -1,0 +1,47 @@
+.routes-grid {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    /* padding: 0 3rem; */
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.route-card {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.route-card img {
+    width: 100%;
+    display: block;
+}
+
+.route-text {
+    padding: 5% 0;
+}
+
+.route-title {
+    color: #845460;
+    font-weight: bold;
+    font-size: 140%;
+    margin-bottom: 4%;
+}
+
+.route-description {
+    color: #4B5563;
+    /* Tailwind gray-700 */
+    text-align: justify;
+    font-size: 100%;
+}
+
+.read-more {
+    text-align: right;
+    text-decoration: underline;
+    padding: 2% 0;
+    color: #845460;
+}

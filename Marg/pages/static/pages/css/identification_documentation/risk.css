@@ -1,0 +1,11 @@
+.image-container {
+    width: 85%;
+    margin: 0 auto 3rem auto;
+    /* Equivalent to mb-12 and mx-auto */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,9 +1,28 @@
 {% extends "pages/base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'pages/css/about/the_marg.css' %}">
+{% endblock %}
 
 {% block title %}MARG{% endblock %}
 
-{% block content %}
-<h1>
-    About
-</h1>
+{% block content %} 
+ <div class="content-grid">
+    <div class="text-section">
+      <p>
+        MARG stands for “Mapping Ancient and Historic Routes using Geo-Spatial Tools”. The project aims to create an open-source database that links all institutions, laboratories, and researchers engaged in the study of cultural and historic routes across the Indian Subcontinent region. As the first stage, the project focuses on the trade routes of the Bhotiya tribe in the Himalayan Regions. Within the context of the Himalayan region, the Bhotias of Uttarakhand traversed cultural routes to reach Tibet's highlands, which demonstrates how societies enrich themselves through communication over centuries. This ethnically and culturally diverse community traditionally lived a nomadic life and can be found in the upper reaches of the Great Himalayas, along the Indo-Tibetan border.
+      </p>
+      <p>
+        The core objective of our project is to promote and preserve the cultural and heritage roots of the Indian Subcontinent, a noble aspiration that serves as the driving force behind our efforts. We strive to create an all-encompassing resource that fosters collaboration, facilitates the sharing of knowledge and resources, and provides a platform for all stakeholders to come together and honor the region's rich and multifaceted cultural heritage.
+      </p>
+      <p>
+        This database will be a comprehensive resource, offering easy access to information on ongoing work and the experts involved, thereby catering to the needs of anyone interested in this field. Therefore, we extend an invitation to all institutions, laboratories, and researchers engaged in this area to join us in our endeavor and contribute to this valuable resource. Together, we can make a significant difference in advancing cultural and heritage tourism, education, and research in the region.
+      </p>
+    </div>
+    <div class="image-section">
+      <img src="{% static '/assets/7-9abf492d.jpg' %}" alt="Bhotiya Trade Route Map" />
+      <img src="{% static '/assets/3-2b345729.jpg' %}" alt="Bhotiya Cultural Heritage" />
+    </div>
+  </div>
 {% endblock %}

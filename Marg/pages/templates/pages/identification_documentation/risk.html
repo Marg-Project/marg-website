@@ -1,9 +1,14 @@
 {% extends "pages/base.html" %}
+{% load static %}
 
 {% block title %}MARG{% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'pages/css/identification_documentation/risk.css' %}">
+{% endblock %}
+
 {% block content %}
-<h1>
-    Identification & Documentation
-</h1>
+<div class="image-container">
+    <img src="{% static '/assets/image7-3f82b24b.png' %}" alt="Sunset in the mountains" />
+</div>
 {% endblock %}

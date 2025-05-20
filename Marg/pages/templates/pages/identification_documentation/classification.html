@@ -1,9 +1,49 @@
 {% extends "pages/base.html" %}
+{% load static %}
 
 {% block title %}MARG{% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'pages/css/identification_documentation/classification.css' %}">
+{% endblock %}
+
 {% block content %}
-<h1>
-    Identification & Documentation
-</h1>
+<div class="routes-grid">
+    <div class="route-card">
+        <img src="{% static '/assets/image 1-45ada715.jpg' %}" alt="Sunset in the mountains" />
+        <div class="route-text">
+            <div class="route-title">LAND ROUTES</div>
+            <p class="route-description">
+                The core objective of our project is to promote and preserve the cultural and heritage roots of the
+                Indian Subcontinent.
+            </p>
+        </div>
+        <div class="read-more">READ MORE</div>
+    </div>
+
+    <div class="route-card">
+        <img src="{% static '/assets/image 2-aab840f0.png' %}" alt="Sunset in the mountains" />
+        <div class="route-text">
+            <div class="route-title">SEA ROUTES</div>
+            <p class="route-description">
+                The core objective of our project is to promote and preserve the cultural and heritage roots of the
+                Indian Subcontinent.
+            </p>
+        </div>
+        <div class="read-more">READ MORE</div>
+    </div>
+
+    <div class="route-card">
+        <img src="{% static '/assets/image 3-3cc118c7.png' %}" alt="Sunset in the mountains" />
+        <div class="route-text">
+            <div class="route-title">CANAL / RIVER ROUTES</div>
+            <p class="route-description">
+                The core objective of our project is to promote and preserve the cultural and heritage roots of the
+                Indian Subcontinent.
+            </p>
+        </div>
+        <div class="read-more">READ MORE</div>
+    </div>
+</div>
+
 {% endblock %}

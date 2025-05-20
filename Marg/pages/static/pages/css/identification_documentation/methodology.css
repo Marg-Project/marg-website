@@ -1,0 +1,30 @@
+.content-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 100%;
+        margin: 0 auto 4rem auto;
+        gap: 5rem;
+        height: fit-content;
+}
+
+.text-section {
+        color: #2B4F60;
+        font-weight: 540;
+        font-size: 100%;
+        grid-column: span 3;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+}
+
+.image-section {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+}
+
+.image-section img {
+        width: 100%;
+        height: 100%;
+}
