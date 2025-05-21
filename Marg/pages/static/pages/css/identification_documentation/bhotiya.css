@@ -1,0 +1,46 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #2B4F60;
+    width: 85%;
+    margin: 0 auto;
+    padding-right: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin-bottom: 3rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav-button {
+    background-color: #D9D9D9;
+    color: #2B4F60;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.asset-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.asset-list ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
