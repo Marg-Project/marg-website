@@ -1,15 +1,15 @@
 body {
   --margin:1.56rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .routes-grid {
-    font-family: 'Open Sans', sans-serif;
     width: 100%;
-    margin: calc(2*var(--margin))  calc(var(--margin));
+    padding: 3rem var(--margin);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--margin);
-    height: 100%;   
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(1.5 * var(--margin)); 
+    box-sizing: border-box;
 }
 a
 .route-card {

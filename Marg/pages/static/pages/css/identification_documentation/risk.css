@@ -1,3 +1,8 @@
+body {
+  --margin:1.56rem;
+  font-family: 'Inter', sans-serif;
+}
+
 .image-container {
     width: 85%;
     margin: 0 auto 3rem auto;
