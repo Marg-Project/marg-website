@@ -1,30 +1,38 @@
+body {
+  --margin:1.56rem;
+}
+
+/* Container Layout */
 .content-grid {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        width: 100%;
-        margin: 0 auto 4rem auto;
-        gap: 5rem;
-        height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: var(--margin);
+  gap: calc(0.1*var(--margin));
+  box-sizing: border-box;
 }
 
+/* Text Section Styling */
 .text-section {
-        color: #2B4F60;
-        font-weight: 540;
-        font-size: 100%;
-        grid-column: span 3;
-        text-align: justify;
-        display: flex;
-        flex-direction: column;
+  color: #2B4F60;
+  font-weight: 440;
+  font-size: 1.29rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  margin-right: calc(2*var(--margin));
+  margin-left: calc(3*var(--margin));
 }
 
+/* Image Section Styling */
 .image-section {
-        grid-column: span 4;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: calc(0.56*var(--margin));
+  padding-right: calc(3*var(--margin));
 }
 
 .image-section img {
-        width: 100%;
-        height: 100%;
+  width: 100%;
+  border-radius: 0.75rem;
 }

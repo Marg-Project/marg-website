@@ -1,29 +1,35 @@
+body {
+  --margin:1.56rem;
+}
+
 /* Container Layout */
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  margin: 0 auto 5rem auto;
-  gap: 2rem;
+  margin: var(--margin);
+  gap: calc(0.1*var(--margin));
   box-sizing: border-box;
-  padding: 0 1rem;
 }
 
 /* Text Section Styling */
 .text-section {
   color: #2B4F60;
-  font-weight: 540;
-  font-size: 1rem;
+  font-weight: 440;
+  font-size: 1.29rem;
   text-align: justify;
   display: flex;
   flex-direction: column;
+  margin-right: calc(2*var(--margin));
+  margin-left: calc(3*var(--margin));
 }
 
 /* Image Section Styling */
 .image-section {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: calc(0.56*var(--margin));
+  padding-right: calc(3*var(--margin));
 }
 
 .image-section img {
