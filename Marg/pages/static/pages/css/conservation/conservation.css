@@ -1,0 +1,24 @@
+body {
+  font-family: 'Inter', sans-serif;
+  --text-color: #2b4f60;
+  --margin:1.56rem;
+}
+
+.grid-container {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #2B4F60;
+    width: 100%;
+    margin: 0 auto var(--margin) auto;
+    padding: calc(1.8*var(--margin)) calc(2.2*var(--margin));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1.09rem;
+    text-align: justify;
+    width: 90%;
+}
